@@ -126,7 +126,7 @@ button{
 
 .landing-img img{
     max-height: 60vh;
-} 
+}
 
 
 /* ABOUT PAGE */
@@ -185,11 +185,17 @@ button{
 
 .about-text {
     padding: 15px;
+    margin: 0 auto 0 30px;
+    max-width: 1100px
 }
+.about-intro {
+  margin-right: auto;
+}
+
 .about-list {
     display: flex;
     padding: 40px 0px 0px 40px;
-    justify-content:space-between;
+    justify-content:space-evenly;
 }
 .about-skills li{
     font-weight: 500;
@@ -208,7 +214,7 @@ button{
 
 
 .about-exp {
-    margin-top: 20px;  
+    margin-top: 20px;
 }
 .card {
     background-color: white;
