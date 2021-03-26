@@ -239,3 +239,19 @@ button{
     margin-left: 20px;
     font-size: 0.9rem;
 }
+
+/* CONTACT */
+.contact-landing {
+    display: flex;
+    min-height: 80vh;
+    align-items: center;
+    justify-content: center;
+}
+.contact-items {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.contact-items h3{
+    padding: 15px 0 15px 0;
+}
