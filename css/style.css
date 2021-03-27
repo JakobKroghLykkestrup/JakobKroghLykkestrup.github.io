@@ -116,6 +116,15 @@ button{
     background-color: #fff;
     color: #5f5f79;
 }
+.about-cv-btn button:hover{
+    background-color: #fff;
+    color: #5f5f79;
+}
+.cta button{
+    width: auto;
+    height: auto;
+    padding: 5px;
+}
 
 .landing-img {
     flex: 1;
@@ -130,13 +139,15 @@ button{
 
 
 /* ABOUT PAGE */
+.hidden {
+    display: none;
+}
 .about-landing{
     display: flex;
     width: 90%;
     margin: auto;
     min-height: 80vh;
 }
-
 .about-card {
   height: 400px;
   width: 350px;
