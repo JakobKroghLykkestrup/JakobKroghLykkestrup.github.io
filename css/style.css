@@ -266,3 +266,45 @@ button{
 .contact-items h3{
     padding: 15px 0 15px 0;
 }
+
+/* PROJECTS PAGE */
+.project-intro{
+    padding: 20px;
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.project-intro h1{
+    margin: 20px 0 15px 0;
+}
+.section-a {
+    width:90%;
+    margin:auto;
+    display: flex;
+    margin-bottom: 20px;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.project-card {
+    width: 300px;
+    border-radius: 10px;
+    margin: 10px 10px;
+}
+.project-card img{
+    max-width: 100%;
+}
+.project-card-body {
+    padding-top: 0px;
+    margin: 0px;
+}
+#project-one .card-pic{
+    padding: 25px 0px;
+}
+#project-two .card-pic{
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
