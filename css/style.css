@@ -2,6 +2,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    /* background-color: #f2f2f2; */
 }
 
 body{
@@ -278,33 +279,46 @@ button{
 .project-intro h1{
     margin: 20px 0 15px 0;
 }
-.section-a {
-    width:90%;
-    margin:auto;
-    display: flex;
-    margin-bottom: 20px;
+.project-a{
+    padding: 0px 20px;
 }
 .grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 40px;
+    justify-items: center;
 }
 .project-card {
     width: 300px;
+    background-color: white;
+    box-shadow: 0 .75rem 1.5rem rgba(18,38,63,.3);
     border-radius: 10px;
-    margin: 10px 10px;
+    margin: 10px;
+    transition: translateY;
 }
-.project-card img{
-    max-width: 100%;
+.project-card:hover {
+      transform: translateY(-.5%);
+      box-shadow: 0 4rem 8rem rgba(0, 0, 0, .2);
 }
-.project-card-body {
-    padding-top: 0px;
+.card-pic{
+    width: 100%;
+    height: 150px;
+    padding: 0px;
     margin: 0px;
 }
-#project-one .card-pic{
-    padding: 25px 0px;
+.project-card img{
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
 }
-#project-two .card-pic{
-    padding-top: 0px;
-    padding-left: 0px;
-    padding-right: 0px;
+.project-card-body {
+    padding-top: 10px;
+    margin: 0px;
+}
+.card-footer {
+    padding: 15px 0 5px 0;
+}
+.p-card-footer {
+    font-weight: 500;
 }
