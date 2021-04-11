@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/testcss.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet"> 
+    <title>JKL - Programming and Data Analysis</title>
+    <script src="https://kit.fontawesome.com/40abf4508a.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-row">
+            <div class="logo-container">
+                <a href="index.html">
+                    <img src="./pics/three-squares-line.png" alt="">
+                    <h4 class="logo">JKL</h4>
+                </a>
+            </div>
+            <!-- <li><i class="fas fa-bars hidden" id="burger-men"><input type="checkbox"></i></li> -->
+            <nav>
+                <ul class="nav-links">
+                    <li ><a class="nav-link" href="about.html">About</a></li>
+                    <li ><a class="nav-link" href="projects.html">Projects</a></li>
+                    <li ><a class="nav-link" href="contact.html">Contact</a></li>   
+                </ul>
+            </nav>   
+            <div class="ham-men">
+                <!-- HAMBURGER -->
+                <input type="checkbox" class="toogler">
+                <label class="hamburger" for="hamburger">&#9776;</label>
+                <div class="cover"></div>
+            </div>
+        </div>
+        
+    </header>
+
+    <script>
+        $('.toogler').click(function() { 
+            if(this.checked) {
+                // NAV 
+                $('nav').css('border','5px solid green');
+                $('nav').css('display', 'contents');
+                $('nav').css('position', 'absolut');
+                $('nav').css('top','0');
+                $('nav').css('bottom','0');
+                $('nav').css('left','0');
+                $('nav').css('right','0');
+                $('nav').css('height','100%');
+                // NAV-LINKS
+                $('.nav-links').css('border','1px solid black');
+                $('.nav-links').css('height','800px');
+                // $('.nav-links').css('display','flex');
+                $('.nav-links').css('flex-direction','column');
+                $('.nav-links').css('align-items','center');
+                $('.nav-links').css('justify-content','center')
+                $('.nav-links').css('position','absolut');
+                $('.nav-links').css('top','0');
+                $('.nav-links').css('padding','0px');
+
+                
+                $('.nav-links li').css('margin-bottom','20px');
+                $('.nav-links li').css('z-index','5');
+                // $('.nav-links li a').css('margin-bottom','10px');
+                $('.nav-links li a').css('z-index','4');
+                $('.nav-links li a').css('color','red');
+                } else {
+                    $('.header-row').css('background-color', 'white');
+                }
+            });
+    </script>
+    
+</body>
+</html>

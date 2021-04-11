@@ -7,23 +7,31 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet"> 
     <title>JKL - Programming and Data Analysis</title>
+    <script src="https://kit.fontawesome.com/40abf4508a.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
+    <nav>
         <div class="logo-container">
             <a href="index.html">
                 <img src="./pics/three-squares-line.png" alt="">
-                <h4 class="logo">JKL</h4>
+                <p class="logo">JKL</p>
             </a>
         </div>
-        <nav>
-            <ul class="nav-links">
-                <li ><a class="nav-link" href="about.html">About</a></li>
-                <li ><a class="nav-link" href="projects.html">Projects</a></li>
-                <li ><a class="nav-link" href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+
+        <div class="openMenu"><i class="fa fa-bars"></i></div>
+        <ul class="mainMenu">
+            <li ><a class="nav-link" href="about.html">About</a></li>
+            <li ><a class="nav-link" href="projects.html">Projects</a></li>
+            <li ><a class="nav-link" href="contact.html">Contact</a></li>   
+            <div class="closeMenu"><i class="fa fa-times"></i></div>
+            <span class="icons">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-github"></i>
+            </span>
+        </ul> 
+    </nav>
 
     <main>
         <div class="project-intro">
@@ -39,7 +47,7 @@
                 <!-- PROJECT ONE              -->
                 <div class="project-card">
                     <div class="card-pic">
-                        <img src="./pics/website.png" alt="">
+                        <img src="./pics/Web-Development.jpg" alt="">
                     </div>
                     <div class="card-body project-card-body">
                         <h1>Website</h1>
@@ -51,7 +59,7 @@
                         <div class="card-footer">
                             <p class="p-card-footer">Language: HTML, CSS</p>
                             <a href="https://github.com/JakobKroghLykkestrup/JakobKroghLykkestrup.github.io">
-                                <p class="p-card-footer">GitHub Repo</p>
+                                <p class="p-card-footer">Code: GitHub Repo</p>
                             </a>  
                         </div>
                     </div>
@@ -63,14 +71,16 @@
                     </div>
                     <div class="card-body project-card-body">
                         <h1>Excel scraping</h1>
-                        <p>Python scripts that goes through files in a folder and its subfolders. 
-                            Hereafter it scrapes, clean and transforms the data with pandas and saves
-                            it as a csv and Excel file. 
-                            You will find the source code at my github page.</p>
+                        <p>Python scripts that was made to scrape timeregistration data.
+                            The script goes through each Excel file and 
+                            extracts, cleans and transforms the data with pandas.
+                            Its all being appended to one dataframe, 
+                            that ends up being ouputted to a new csv and Excel file. 
+                            </p>
                         <div class="card-footer">
                             <p class="p-card-footer">Language: Python</p>
                             <a href="https://github.com/JakobKroghLykkestrup/Python-scripts#Excel_Scraper">
-                                <p class="p-card-footer">GitHub Repo</p>
+                                <p class="p-card-footer">Code: GitHub Repo</p>
                             </a>  
                         </div>
                     </div>
@@ -83,13 +93,13 @@
                     <div class="card-body project-card-body">
                         <h1>Excel SQL logger</h1>
                         <p>VBA API for SQL database. 
-                            Import the class and use it to read/wrtie to the database.
+                            Import the class and use it to read/write to the database.
                             The class uses parameterized queries to prevent SQL injection attacks.
                         </p>
                         <div class="card-footer">
                             <p class="p-card-footer">Language: VBA</p>
                             <a href="https://github.com/JakobKroghLykkestrup/VBA#SQL_API_CLASS">
-                                <p class="p-card-footer">GitHub Repo</p>
+                                <p class="p-card-footer">Code: GitHub Repo</p>
                             </a>  
                         </div>    
                     </div>
@@ -98,6 +108,6 @@
         </section>
     </main>
 
-    
+    <script src="/js/app.js"></script>
 </body>
 </html>

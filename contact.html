@@ -7,23 +7,31 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet"> 
     <title>JKL - Programming and Data Analysis</title>
+    <script src="https://kit.fontawesome.com/40abf4508a.js" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/40abf4508a.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
+    <nav>
         <div class="logo-container">
             <a href="index.html">
                 <img src="./pics/three-squares-line.png" alt="">
-                <h4 class="logo">JKL</h4>
+                <p class="logo">JKL</p>
             </a>
         </div>
-        <nav>
-            <ul class="nav-links">
-                <li ><a class="nav-link" href="about.html">About</a></li>
-                <li ><a class="nav-link" href="projects.html">Projects</a></li>
-                <li ><a class="nav-link" href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+
+        <div class="openMenu"><i class="fa fa-bars"></i></div>
+        <ul class="mainMenu">
+            <li ><a class="nav-link" href="about.html">About</a></li>
+            <li ><a class="nav-link" href="projects.html">Projects</a></li>
+            <li ><a class="nav-link" href="contact.html">Contact</a></li>   
+            <div class="closeMenu"><i class="fa fa-times"></i></div>
+            <span class="icons">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-github"></i>
+            </span>
+        </ul> 
+    </nav>
 
     <main>
         <section class="contact-landing">
@@ -35,6 +43,6 @@
         </section>
     </main>
 
-    
+    <script src="/js/app.js"></script>
 </body>
 </html>

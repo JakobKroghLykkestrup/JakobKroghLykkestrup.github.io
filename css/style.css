@@ -33,25 +33,24 @@ a {
 }
 
 /* HEADER */
-header{
+nav {
     display: flex;
-    width: 90%;
-    margin: auto;
-    height: 10vh;
+    justify-content: space-between;
     align-items: center;
+    width: 90%;
+    margin: 20px auto;
+    height: 60px;
 }
-.logo-container, .nav-links{
-    display: flex;
-}
+
+
 .logo-container a{
     display: flex;
     align-items: center;
 }
 .logo-container img{
-    max-height: 10vh;
+    max-height: 60px;
     filter: opacity(30%);
 }
-
 .logo{
     font-weight: 500;
     margin: 10px;
@@ -59,25 +58,50 @@ header{
     font-size: 18px;
 }
 
-nav{
-    flex: 1;
+nav .mainMenu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+
 }
 
-.nav-links{
-    justify-content:flex-end;
-    list-style: none;
-}
-.nav-link {
+nav .mainMenu a{
+    display: inline-block;
     text-decoration: none;
     color: #5f5f79;
+    font-weight: 450;
     font-size: 18px;
     margin-right: 80px;
     margin-left: 80px;
 }
-.nav-links a:hover{
+
+nav .mainMenu a:last-child {
+    margin-right: 0px;
+}
+
+nav .mainMenu a:hover{
     border-bottom: 2px solid #8282a5;
 }
 
+nav .openMenu {
+    font-size: 1.5rem;
+    /* margin: 20px; */
+    cursor: pointer;
+    color: #5f5f79;
+    display: none;
+}
+
+nav .mainMenu .closeMenu, .icons i {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #5f5f79;
+    display: none;
+}
+
+.fa-facebook:hover {color:#373f41;}
+.fa-instagram:hover {color:#373f41;}
+.fa-twitter:hover {color:#373f41;}
+.fa-github:hover {color:#373f41;}
 
 /* MAIN */
 .landing{
@@ -321,4 +345,70 @@ button{
 }
 .p-card-footer {
     font-weight: 500;
+}
+
+.hidden {
+    display:none;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    /* NAV MENU */
+    nav .mainMenu {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: white;
+        transition: top 1s ease;
+        display: none;
+    }
+    nav .mainMenu a {
+        margin: 10px 0;
+    }
+
+    nav .mainMenu .closeMenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    nav .openMenu {
+        display: block;
+    }
+
+    nav .mainMenu li a:hover {
+        background:none;
+        color: #414a4c;
+        font-weight: 700;
+        border: none;
+        /* font-size: 1.6rem; */
+    }
+
+    .icons i {
+        display: inline-block;
+        padding: 5px;
+        margin-top: 10px;
+    }
+
+    /* INDEX PAGE */
+    header {
+        padding-top: 20px;
+    }
+    .landing-img {
+        display: none;
+    }
+    .landing {
+        flex-direction: column;
+    }
+    .intro-text {
+        margin: 20px 0;
+    }
 }
